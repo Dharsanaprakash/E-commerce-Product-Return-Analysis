@@ -4,14 +4,15 @@
 This project analyzes product return patterns in an e-commerce dataset using **SQL and Power BI**.  
 The goal is to identify key factors contributing to product returns and provide insights that could help improve product quality, logistics, and customer satisfaction.
 
-The dataset contains **5052 e-commerce transactions** including product category, payment method, shipping method, return reason, and return status.
-
 ---
 
 ## Tools Used
 - SQL (MySQL Workbench)
 - Power BI
 - Excel
+- Pivot Tables
+- Data Cleaning
+- Data Visualization
 
 ---
 
@@ -29,7 +30,21 @@ The dataset includes the following key columns:
 - User_Age
 - User_Gender
 
-Total records analyzed: **5052 orders**
+---
+
+## KPI
+
+**Return Rate**
+
+Total records analyzed: **50.52**%
+
+---
+
+## Key Insights
+
+- Books and Clothing categories show the highest return counts compared to other product categories.
+- Defective products are the most common reason for returns, followed by incorrect items.
+- Orders paid using Gift Card and Debit Card methods show higher return counts.
 
 ---
 
@@ -44,13 +59,19 @@ Key analysis performed:
 - Returns by return reason
 - Returns by payment method
 
-Example SQL Query:
+---
 
-```sql
-SELECT 
-Product_Category,
-COUNT(*) AS Total_Returns
-FROM ecommerce_data_project
-WHERE Return_Flag = 'Returned'
-GROUP BY Product_Category
-ORDER BY Total_Returns DESC;
+## Dashboard
+
+![Dashboard](images/dashboard.png)
+
+- The dashboard highlights return trends across product categories, payment methods, and return reasons.
+- It provides insights into high-return products and helps identify operational issues affecting product returns.
+
+---
+
+## Business Recommendations
+
+- Improve product quality control to reduce defective product returns.
+- Enhance product descriptions and verification to reduce wrong-item deliveries.
+- Monitor product categories with high return rates to improve product performance.
