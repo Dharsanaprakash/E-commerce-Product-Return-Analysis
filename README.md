@@ -63,7 +63,7 @@ Key analysis performed:
 
 ## Dashboard
 
-![Dashboard](images/dashboard.png)
+![Dashboard](Images/dashboard.png)
 
 - The dashboard highlights return trends across product categories, payment methods, and return reasons.
 - It provides insights into high-return products and helps identify operational issues affecting product returns.
